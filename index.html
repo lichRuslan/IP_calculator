@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Вычесляем IP адреса</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <div class="addrs">
+            
+
+            <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">введите IP adress</span>
+                    </div>
+                    <input type="text" aria-label="First name" class="form-control addr" id="q1">.
+                    <input type="text" aria-label="Last name" class="form-control addr" id="q2">.
+                    <input type="text" aria-label="Last name" class="form-control addr" id="q3">.
+                    <input type="text" aria-label="Last name" class="form-control addr" id="q4">/
+                    <input type="text" aria-label="Last name" class="form-control addr" id="cidr">
+                    <button onclick='calculate();' class="btn btn-success">Вычеслить !</button>
+                  </div>
+        </div>
+        <div>
+                <hr>
+                
+                <div class='result'>
+                <span class='label input-group-text'>IP Address: <span class='value form-control' id=resIP></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Маска подсети : <span class='value form-control' id=resMask></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Сетевой адрес: <span class='value form-control'  id=resNet></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Адрес трансляции : <span class='value form-control' id=resBC></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label  input-group-text'>Класс : <span class='value form-control' id=resClass></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Спектр : <span class='value form-control' id=resRange></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>IP двоичный :<span class='value form-control' id=resBinIP></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Mask двоичный : <span class='value form-control'  id=resBinMask></span> </span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>Бинарный адрес сети : <span class='value form-control' id=resBinNet></span></span>
+                
+                </div>
+                <div class='result'>
+                <span class='label input-group-text'>BC Address Binary : <span class='value form-control' id=resBinBC></span></span>
+                
+                </div>
+                <hr>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</body>
+</html>
